@@ -9,5 +9,7 @@
     "editor.formatOnSave": true
   },
   "prettier.eslintIntegration": true,
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "window.zoomLevel": 2,
+  "editor.fontSize": 20
 }
