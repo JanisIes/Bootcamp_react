@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import logo from "../../media/image-placeholder.svg";
-import "./index.css";
+import React, { Component } from 'react'
+import logo from '../../media/image-placeholder.svg'
+import './index.css'
 
 class Header extends Component {
   render() {
@@ -15,17 +15,16 @@ class Header extends Component {
             <div className="header-buttons">
               <button
                 className="btn btn-primary"
-                onClick={this.props.onModalOpen}
+                onClick={this.props.handleOpenModal}
               >
                 create post
               </button>
-              <button className="btn">log out</button>
             </div>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header
