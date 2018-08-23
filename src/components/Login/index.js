@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./index.css";
 
 class Login extends Component {
   state = {
@@ -8,7 +9,8 @@ class Login extends Component {
 
   onChange = event =>
     this.setState({ [event.target.name]: event.target.value });
-  handleLogin = () => {
+  handleLogin = event => {
+    event.preventDefault();
     const { email, password } = this.state;
     this.props.login(email, password).then(() => {
       if (this.props.loginReducer.isLogged) {

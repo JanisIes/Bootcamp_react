@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing UserCard renders snapshot 1`] = `
+<div
+  className="user-wrapper"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-2"
+    >
+      <img
+        className="user-image"
+        src="image-placeholder.svg"
+      />
+    </div>
+    <div
+      className="col-md-10"
+    >
+      <div
+        className="user-heading"
+      >
+        name
+      </div>
+      <div
+        className="user-description"
+      >
+        Desc
+      </div>
+    </div>
+  </div>
+</div>
+`;

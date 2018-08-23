@@ -9,14 +9,13 @@ class Register extends Component {
 
   onChange = event =>
     this.setState({ [event.target.name]: event.target.value });
-  handleRegister = e => {
-    e.preventDefault();
+  handleRegister = event => {
+    event.preventDefault();
     const { email, username, password } = this.state;
     this.props.register(email, username, password).then(() => {
       if (this.props.registerReducer.isRegistered) {
         this.props.history.push("/login");
       }
-      console.log(this.state);
     });
   };
 
